@@ -105,6 +105,15 @@
 
 
 ### 3. Compensation / Correlation
+#### 주문
+![image](https://user-images.githubusercontent.com/119825871/205930206-d1276835-193c-4b06-ac33-4b2f9cc01f9a.png)
+
+#### 주문취소
+![image](https://user-images.githubusercontent.com/119825871/205930266-21787467-574b-4006-b435-e3ee32fedce0.png)
+
+![image](https://user-images.githubusercontent.com/119825871/205930699-7a803c3f-e276-474a-9c12-447e115c4b33.png)
+
+![image](https://user-images.githubusercontent.com/119825871/205931318-0eb2f8ea-93bf-4100-bada-f7f55cf043b0.png)
 
 
 ### 4. Request / Response
