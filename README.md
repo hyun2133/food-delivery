@@ -92,8 +92,12 @@
 ![스크린샷_20221206_032316](https://user-images.githubusercontent.com/119825871/205837076-c39e8119-9678-4d31-b57f-eba88450b9ab.png)
 
 ### 3. CQRS
+#### 구현
+![image](https://user-images.githubusercontent.com/119825871/205856394-c2d76ca4-8c4b-4bd5-8348-c23d60fd5f53.png)
+#### 실행
+
 ### 4. Compensation / Correlation
-###
+
 
 ### 5. Request / Response
 #### 구현
@@ -102,7 +106,6 @@
 ![스크린샷_20221206_041714](https://user-images.githubusercontent.com/119825871/205846241-d3854f8a-28b3-4f16-b940-bde07f11e93e.png)
 
 ### 7. Circuit Breaker
-###
 
 ### 6. Gateway / Ingress
 - 구현
