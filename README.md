@@ -79,13 +79,18 @@
 
 ### 체크포인트
 1. Saga (Pub / Sub)
-2. CQRS
-3. Compensation / Correlation
-4. Request / Response
-5. Circuit Breaker
+
+3. CQRS
+4. Compensation / Correlation
+5. Request / Response
+6. Circuit Breaker
+
+
 6. Gateway / Ingress
+## 구현
 ![스크린샷_20221206_020802](https://user-images.githubusercontent.com/119825871/205822195-92d8cff9-d2d7-4ace-8ee7-04b65f047ae2.png)
 
+##
 ![스크린샷_20221206_021227](https://user-images.githubusercontent.com/119825871/205822222-5de5e459-c321-4240-8c55-523517d389ef.png)
 
 
