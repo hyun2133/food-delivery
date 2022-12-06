@@ -82,8 +82,11 @@
 ### 구현 : 고객이 음식을 주문한다.
 ![스크린샷_20221206_022606](https://user-images.githubusercontent.com/119825871/205823983-57340537-5eeb-4725-b250-72db913467c4.png)
 
-### 실행
+### 실행: 
 ![스크린샷_20221206_025911](https://user-images.githubusercontent.com/119825871/205831724-6c77cdf7-1810-4225-995e-e964a713c190.png)
+
+### 실행 : 상점에서 주문을 확인한다.
+![스크린샷_20221206_031330](https://user-images.githubusercontent.com/119825871/205835621-ae00566f-4c6c-4202-8acb-1c5e87e79663.png)
 
 ### 실행
 ![스크린샷_20221206_025849](https://user-images.githubusercontent.com/119825871/205831895-e1b960f6-03a3-45ad-98a5-20519bc6514b.png)
