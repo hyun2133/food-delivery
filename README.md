@@ -89,7 +89,7 @@
 ![스크린샷_20221206_031330](https://user-images.githubusercontent.com/119825871/205835621-ae00566f-4c6c-4202-8acb-1c5e87e79663.png)
 
 ### 실행
-![스크린샷_20221206_025849](https://user-images.githubusercontent.com/119825871/205831895-e1b960f6-03a3-45ad-98a5-20519bc6514b.png)
+![스크린샷_20221206_032316](https://user-images.githubusercontent.com/119825871/205837076-c39e8119-9678-4d31-b57f-eba88450b9ab.png)
 
 3. CQRS
 4. Compensation / Correlation
