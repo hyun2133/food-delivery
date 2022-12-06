@@ -71,7 +71,8 @@
     - 고객이 주문상태를 중간중간 조회한다 (View-green sticker 의 추가로 ok) 
     - 주문상태가 바뀔 때 마다 카톡으로 알림을 보낸다.
     
-![image](https://user-images.githubusercontent.com/119825871/205928635-eb3a62da-3486-4047-a3bb-6fb9a61971ef.png)   
+![image](https://user-images.githubusercontent.com/119825871/205928635-eb3a62da-3486-4047-a3bb-6fb9a61971ef.png)  
+
     - 고객이 리뷰을 작성한다.
     - 상점주인이 댓글을 올린다.
 
@@ -103,16 +104,16 @@
 ![image](https://user-images.githubusercontent.com/119825871/205856394-c2d76ca4-8c4b-4bd5-8348-c23d60fd5f53.png)
 
 
-### 4. Compensation / Correlation
+### 3. Compensation / Correlation
 
 
-### 5. Request / Response
+### 4. Request / Response
 #### 구현
 ![스크린샷_20221206_041555](https://user-images.githubusercontent.com/119825871/205846190-73cf48a6-9ca7-4bb1-b81c-978ef0bc9220.png)
 #### 실행
 ![스크린샷_20221206_041714](https://user-images.githubusercontent.com/119825871/205846241-d3854f8a-28b3-4f16-b940-bde07f11e93e.png)
 
-### 7. Circuit Breaker
+### 5. Circuit Breaker
 
 ### 6. Gateway / Ingress
 - 구현
