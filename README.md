@@ -171,7 +171,7 @@
     - View Model 추가
 
 ### 추가 모형
-![스크린샷_20221206_015724](https://user-images.githubusercontent.com/119825871/205819799-ca801b67-6ebc-482c-b432-3688c6a53e4a.png)
+![스크린샷_20221206_015724](https://user-images.githubusercontent.com/119825871/205820152-1b36f8d6-6197-43db-bf4c-61103b1897a2.png)
 
  - View Model 추가
 
