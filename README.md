@@ -58,18 +58,20 @@
 
 ### 1차 완성본에 대한 기능적/비기능적 요구사항을 커버하는지 검증
 
-![image](https://user-images.githubusercontent.com/119825871/205919183-9a4db432-39a4-4cc1-a53f-59bd24afd13a.png)
+![스크린샷_20221206_095841](https://user-images.githubusercontent.com/119825871/205927669-90a95d03-b3b0-4f7c-942b-0399bfd6f67a.png)
+
     - 고객이 메뉴를 선택하여 주문한다 (ok)
     - 고객이 결제한다 (ok)
-    - 주문이 되면 주문 내역이 입점상점주인에게 전달된다 (ok)
-    - 상점주인이 확인하여 요리해서 배달 출발한다 (ok)
-    
+    - 주문이 되면 주문 내역이 상점주인에게 전달된다 (ok)
+    - 상점주인이 확인하여 요리해서 배달 출발한다 (ok)  
 
-![스크린샷_20221206_015724](https://user-images.githubusercontent.com/119825871/205820736-12fa151c-885e-4b71-a561-4e57886f748c.png)
+![스크린샷_20221206_095842](https://user-images.githubusercontent.com/119825871/205928305-c8292f3a-2678-4ae0-b33e-c66209553269.png)
+
     - 고객이 주문을 취소할 수 있다 (ok)
-    - 주문이 취소되면 배달이 취소된다 (ok)
     - 고객이 주문상태를 중간중간 조회한다 (View-green sticker 의 추가로 ok) 
-    - 주문상태가 바뀔 때 마다 카톡으로 알림을 보낸다 (?)
+    - 주문상태가 바뀔 때 마다 카톡으로 알림을 보낸다.
+    
+![image](https://user-images.githubusercontent.com/119825871/205928635-eb3a62da-3486-4047-a3bb-6fb9a61971ef.png)   
     - 고객이 리뷰을 작성한다.
     - 상점주인이 댓글을 올린다.
 
