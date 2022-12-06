@@ -83,7 +83,7 @@
 ![스크린샷_20221206_022606](https://user-images.githubusercontent.com/119825871/205823983-57340537-5eeb-4725-b250-72db913467c4.png)
 
 ### 실행: 
-![스크린샷_20221206_025911](https://user-images.githubusercontent.com/119825871/205831724-6c77cdf7-1810-4225-995e-e964a713c190.png)
+![스크린샷_20221206_032107](https://user-images.githubusercontent.com/119825871/205836807-522b42de-aa36-4178-9448-62e6e1e40a0f.png)
 
 ### 실행 : 상점에서 주문을 확인한다.
 ![스크린샷_20221206_031330](https://user-images.githubusercontent.com/119825871/205835621-ae00566f-4c6c-4202-8acb-1c5e87e79663.png)
@@ -102,7 +102,7 @@
 ![스크린샷_20221206_020802](https://user-images.githubusercontent.com/119825871/205822195-92d8cff9-d2d7-4ace-8ee7-04b65f047ae2.png)
 
 - 실행
-![스크린샷_20221206_025911](https://user-images.githubusercontent.com/119825871/205831698-da6d9190-611d-4a91-adce-5b7bf6ce7dd0.png)
+![스크린샷_20221206_032107](https://user-images.githubusercontent.com/119825871/205836832-4f81c8a5-5d6e-4de7-9948-0475ebcdfe2f.png)
 
 
 
