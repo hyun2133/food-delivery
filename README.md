@@ -166,11 +166,14 @@
 
 ### 완성된 1차 모형
 
-![image](https://user-images.githubusercontent.com/487999/79683646-63bfa300-8266-11ea-9bc5-c0b650507ac8.png)
-
 ![스크린샷_20221206_125331](https://user-images.githubusercontent.com/119825871/205814650-a5ae7911-267a-46c8-96de-bc2dcaca0f87.png)
 
     - View Model 추가
+
+### 추가 모형
+![스크린샷_20221206_015724](https://user-images.githubusercontent.com/119825871/205819799-ca801b67-6ebc-482c-b432-3688c6a53e4a.png)
+
+ - View Model 추가
 
 ### 1차 완성본에 대한 기능적/비기능적 요구사항을 커버하는지 검증
 
