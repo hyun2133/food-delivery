@@ -87,10 +87,10 @@
 
 
 6. Gateway / Ingress
-## 구현
+### 구현
 ![스크린샷_20221206_020802](https://user-images.githubusercontent.com/119825871/205822195-92d8cff9-d2d7-4ace-8ee7-04b65f047ae2.png)
 
-##
+###실행
 ![스크린샷_20221206_021227](https://user-images.githubusercontent.com/119825871/205822222-5de5e459-c321-4240-8c55-523517d389ef.png)
 
 
