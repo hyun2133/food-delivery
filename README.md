@@ -77,34 +77,34 @@
 
 
 
-### 체크포인트
-1. Saga (Pub / Sub)
-### 구현 : 고객이 음식을 주문한다.
+## 체크포인트
+### 1. Saga (Pub / Sub)
+#### 구현 : 고객이 음식을 주문한다.
 ![스크린샷_20221206_022606](https://user-images.githubusercontent.com/119825871/205823983-57340537-5eeb-4725-b250-72db913467c4.png)
 
-### 실행: 
+#### 실행: 
 ![스크린샷_20221206_032107](https://user-images.githubusercontent.com/119825871/205836807-522b42de-aa36-4178-9448-62e6e1e40a0f.png)
 
-### 실행 : 상점에서 주문을 확인한다.
+#### 실행 : 상점에서 주문을 확인한다.
 ![스크린샷_20221206_031330](https://user-images.githubusercontent.com/119825871/205835621-ae00566f-4c6c-4202-8acb-1c5e87e79663.png)
 
-### 실행
+#### 실행
 ![스크린샷_20221206_032316](https://user-images.githubusercontent.com/119825871/205837076-c39e8119-9678-4d31-b57f-eba88450b9ab.png)
 
-3. CQRS
-4. Compensation / Correlation
+### 3. CQRS
+### 4. Compensation / Correlation
 ###
 
-5. Request / Response
+### 5. Request / Response
 - 구현
-ㄴㅇㄹㄴㅇㄹㄴㅇㄹ
+![스크린샷_20221206_041555](https://user-images.githubusercontent.com/119825871/205846190-73cf48a6-9ca7-4bb1-b81c-978ef0bc9220.png)
 - 실행
 ![스크린샷_20221206_041714](https://user-images.githubusercontent.com/119825871/205846241-d3854f8a-28b3-4f16-b940-bde07f11e93e.png)
 
-7. Circuit Breaker
+### 7. Circuit Breaker
 ###
 
-6. Gateway / Ingress
+### 6. Gateway / Ingress
 - 구현
 ![스크린샷_20221206_020802](https://user-images.githubusercontent.com/119825871/205822195-92d8cff9-d2d7-4ace-8ee7-04b65f047ae2.png)
 
