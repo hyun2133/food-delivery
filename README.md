@@ -58,8 +58,7 @@
 
 ### 1차 완성본에 대한 기능적/비기능적 요구사항을 커버하는지 검증
 
-![스크린샷_20221206_125331](https://user-images.githubusercontent.com/119825871/205820716-cbda3a5d-e337-41c4-ab0c-f58457b41516.png)
-
+![image](https://user-images.githubusercontent.com/119825871/205919183-9a4db432-39a4-4cc1-a53f-59bd24afd13a.png)
     - 고객이 메뉴를 선택하여 주문한다 (ok)
     - 고객이 결제한다 (ok)
     - 주문이 되면 주문 내역이 입점상점주인에게 전달된다 (ok)
@@ -94,9 +93,13 @@
 ![스크린샷_20221206_032316](https://user-images.githubusercontent.com/119825871/205837076-c39e8119-9678-4d31-b57f-eba88450b9ab.png)
 
 ### 2. CQRS
+#### 속성
+![image](https://user-images.githubusercontent.com/119825871/205920177-6949f9f9-965a-4608-ba3f-f59def9150c1.png)
+#### CRUD 상세설계
+![image](https://user-images.githubusercontent.com/119825871/205921077-f4e1ba98-a828-47b7-a924-4f59f254219d.png)
 #### 구현
 ![image](https://user-images.githubusercontent.com/119825871/205856394-c2d76ca4-8c4b-4bd5-8348-c23d60fd5f53.png)
-#### 실행
+
 
 ### 4. Compensation / Correlation
 
