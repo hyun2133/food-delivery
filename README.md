@@ -79,6 +79,9 @@
 
 ### 체크포인트
 1. Saga (Pub / Sub)
+- 구현
+![스크린샷_20221206_022606](https://user-images.githubusercontent.com/119825871/205823983-57340537-5eeb-4725-b250-72db913467c4.png)
+- 실행
 
 3. CQRS
 4. Compensation / Correlation
