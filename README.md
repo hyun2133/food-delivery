@@ -170,6 +170,10 @@ public class MyPageViewHandler {
 ```
 
 ## 3. Compensation / Correlation
+![image](https://user-images.githubusercontent.com/119825871/206202095-f3d19611-eb19-42e3-8634-55fbdb03a2d7.png)
+```
+오더주문커맨드 실행시 오더정보 kafka에 적재, 오더캔슬커맨드 실행시 오더정보를 삭제한다.
+```
 ### 주문
 ```
     @PostPersist
