@@ -101,8 +101,102 @@
 ### CRUD 상세설계
 ![image](https://user-images.githubusercontent.com/119825871/205921077-f4e1ba98-a828-47b7-a924-4f59f254219d.png)
 ### 구현
-![image](https://user-images.githubusercontent.com/119825871/205856394-c2d76ca4-8c4b-4bd5-8348-c23d60fd5f53.png)
+```
+@Service
+public class MyPageViewHandler {
 
+    @Autowired
+    private MyPageRepository myPageRepository;
+
+    @StreamListener(KafkaProcessor.INPUT)
+    public void whenOrderPlaced_then_CREATE_1 (@Payload OrderPlaced orderPlaced) {
+        try {
+
+            if (!orderPlaced.validate()) return;
+
+            // view 객체 생성
+            MyPage myPage = new MyPage();
+            // view 객체에 이벤트의 Value 를 set 함
+            myPage.setStatus("주문됨");
+            // view 레파지 토리에 save
+            myPageRepository.save(myPage);
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+
+    @StreamListener(KafkaProcessor.INPUT)
+    public void whenPaid_then_UPDATE_1(@Payload Paid paid) {
+        try {
+            if (!paid.validate()) return;
+                // view 객체 조회
+            Optional<MyPage> myPageOptional = myPageRepository.findById(Long.valueOf(paid.getOrderId()));
+
+            if( myPageOptional.isPresent()) {
+                 MyPage myPage = myPageOptional.get();
+            // view 객체에 이벤트의 eventDirectValue 를 set 함
+                myPage.setStatus("결재됨");    
+                // view 레파지 토리에 save
+                 myPageRepository.save(myPage);
+                }
+
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+    @StreamListener(KafkaProcessor.INPUT)
+    public void whenOrderAccepted_then_UPDATE_2(@Payload OrderAccepted orderAccepted) {
+        try {
+            if (!orderAccepted.validate()) return;
+                // view 객체 조회
+
+                List<MyPage> myPageList = myPageRepository.findByStatus(orderAccepted.getOrderId());
+                for(MyPage myPage : myPageList){
+                    // view 객체에 이벤트의 eventDirectValue 를 set 함
+                    myPage.setStatus("접수됨");
+                // view 레파지 토리에 save
+                myPageRepository.save(myPage);
+                }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+    @StreamListener(KafkaProcessor.INPUT)
+    public void whenOrderRejected_then_UPDATE_3(@Payload OrderRejected orderRejected) {
+        try {
+            if (!orderRejected.validate()) return;
+                // view 객체 조회
+
+                List<MyPage> myPageList = myPageRepository.findByStatus(orderRejected.getOrderId());
+                for(MyPage myPage : myPageList){
+                    // view 객체에 이벤트의 eventDirectValue 를 set 함
+                    myPage.setStatus("거부됨");
+                // view 레파지 토리에 save
+                myPageRepository.save(myPage);
+                }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @StreamListener(KafkaProcessor.INPUT)
+    public void whenOrderAccepted_then_DELETE_1(@Payload OrderAccepted orderAccepted) {
+        try {
+            if (!orderAccepted.validate()) return;
+            // view 레파지 토리에 삭제 쿼리
+            myPageRepository.deleteById(Long.valueOf(orderAccepted.getOrderId()));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+}
+```
 
 ## 3. Compensation / Correlation
 ### 주문
