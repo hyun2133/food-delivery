@@ -80,19 +80,19 @@
 
 ## 체크포인트
 ## 1. Saga (Pub / Sub)
-#### 구현 : Order
+### 구현 : Order
 ![스크린샷_20221206_022606](https://user-images.githubusercontent.com/119825871/205823983-57340537-5eeb-4725-b250-72db913467c4.png)
 
-#### Order 실행
+### Order 실행
 ![스크린샷_20221206_032107](https://user-images.githubusercontent.com/119825871/205836807-522b42de-aa36-4178-9448-62e6e1e40a0f.png)
 
-#### 구현: Store
+### 구현: Store
 ![image](https://user-images.githubusercontent.com/119825871/205917131-0da35007-2a17-45e8-a45e-e3b6e5d1abd8.png)
 
-#### Store실행 : 상점에서 주문을 확인한다.
+### Store실행 : 상점에서 주문을 확인한다.
 ![스크린샷_20221206_031330](https://user-images.githubusercontent.com/119825871/205835621-ae00566f-4c6c-4202-8acb-1c5e87e79663.png)
 
-#### kafka 확인
+### kafka 확인
 ![스크린샷_20221206_032316](https://user-images.githubusercontent.com/119825871/205837076-c39e8119-9678-4d31-b57f-eba88450b9ab.png)
 
 ### 2. CQRS
