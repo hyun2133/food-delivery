@@ -58,14 +58,14 @@
 
 ### 1차 완성본에 대한 기능적/비기능적 요구사항을 커버하는지 검증
 
-![스크린샷_20221206_095841](https://user-images.githubusercontent.com/119825871/205927669-90a95d03-b3b0-4f7c-942b-0399bfd6f67a.png)
+![스크린샷_20221206_125499](https://user-images.githubusercontent.com/119825871/206206130-121fbb6c-680a-4739-902a-562d58da28a6.png)
 
     - 고객이 메뉴를 선택하여 주문한다 (ok)
     - 고객이 결제한다 (ok)
     - 주문이 되면 주문 내역이 상점주인에게 전달된다 (ok)
     - 상점주인이 확인하여 요리해서 배달 출발한다 (ok)  
 
-![스크린샷_20221206_095842](https://user-images.githubusercontent.com/119825871/205928305-c8292f3a-2678-4ae0-b33e-c66209553269.png)
+![스크린샷_20221207_113299](https://user-images.githubusercontent.com/119825871/206206816-8b20c6ea-4014-4533-8e8f-bbf9a59d432b.png)
 
     - 고객이 주문을 취소할 수 있다 (ok)
     - 고객이 주문상태를 중간중간 조회한다 (View-green sticker 의 추가로 ok) 
