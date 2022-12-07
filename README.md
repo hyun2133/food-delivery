@@ -171,15 +171,38 @@ public class MyPageViewHandler {
 
 ## 3. Compensation / Correlation
 ### 주문
-![image](https://user-images.githubusercontent.com/119825871/205930206-d1276835-193c-4b06-ac33-4b2f9cc01f9a.png)
+```
+    @PostPersist
+    public void onPostPersist(){
 
-### 주문취소
-![image](https://user-images.githubusercontent.com/119825871/205930266-21787467-574b-4006-b435-e3ee32fedce0.png)
 
-![image](https://user-images.githubusercontent.com/119825871/205930699-7a803c3f-e276-474a-9c12-447e115c4b33.png)
+        OrderPlaced orderPlaced = new OrderPlaced(this);
+        orderPlaced.publishAfterCommit();
+        
+    }
+ ```
+  ### 주문취소  
+  ```
+    @PreRemove
+    public void onPreRemove(){
+        OrderCancel orderCancel = new OrderCancel(this);
+        orderCancel.publishAfterCommit();
 
-![image](https://user-images.githubusercontent.com/119825871/205931318-0eb2f8ea-93bf-4100-bada-f7f55cf043b0.png)
-
+    }
+  ```
+ ###  MyPageViewHandler.java
+ ```
+ @StreamListener(KafkaProcessor.INPUT)
+    public void whenOrderAccepted_then_DELETE_1(@Payload OrderAccepted orderAccepted) {
+        try {
+            if (!orderAccepted.validate()) return;
+            // view 레파지 토리에 삭제 쿼리
+            myPageRepository.deleteById(Long.valueOf(orderAccepted.getOrderId()));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+  ```
 
 ## 4. Request / Response
 ### 구현
