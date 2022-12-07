@@ -165,35 +165,6 @@ public class MyPageViewHandler {
             e.printStackTrace();
         }
     }
-    @StreamListener(KafkaProcessor.INPUT)
-    public void whenOrderRejected_then_UPDATE_3(@Payload OrderRejected orderRejected) {
-        try {
-            if (!orderRejected.validate()) return;
-                // view 객체 조회
-
-                List<MyPage> myPageList = myPageRepository.findByStatus(orderRejected.getOrderId());
-                for(MyPage myPage : myPageList){
-                    // view 객체에 이벤트의 eventDirectValue 를 set 함
-                    myPage.setStatus("거부됨");
-                // view 레파지 토리에 save
-                myPageRepository.save(myPage);
-                }
-
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-    }
-
-    @StreamListener(KafkaProcessor.INPUT)
-    public void whenOrderAccepted_then_DELETE_1(@Payload OrderAccepted orderAccepted) {
-        try {
-            if (!orderAccepted.validate()) return;
-            // view 레파지 토리에 삭제 쿼리
-            myPageRepository.deleteById(Long.valueOf(orderAccepted.getOrderId()));
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-    }
 
 }
 ```
