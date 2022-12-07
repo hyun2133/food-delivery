@@ -95,20 +95,20 @@
 ### kafka 확인
 ![스크린샷_20221206_032316](https://user-images.githubusercontent.com/119825871/205837076-c39e8119-9678-4d31-b57f-eba88450b9ab.png)
 
-### 2. CQRS
-#### 속성
+## 2. CQRS
+### 속성
 ![image](https://user-images.githubusercontent.com/119825871/205920177-6949f9f9-965a-4608-ba3f-f59def9150c1.png)
-#### CRUD 상세설계
+### CRUD 상세설계
 ![image](https://user-images.githubusercontent.com/119825871/205921077-f4e1ba98-a828-47b7-a924-4f59f254219d.png)
-#### 구현
+### 구현
 ![image](https://user-images.githubusercontent.com/119825871/205856394-c2d76ca4-8c4b-4bd5-8348-c23d60fd5f53.png)
 
 
-### 3. Compensation / Correlation
-#### 주문
+## 3. Compensation / Correlation
+### 주문
 ![image](https://user-images.githubusercontent.com/119825871/205930206-d1276835-193c-4b06-ac33-4b2f9cc01f9a.png)
 
-#### 주문취소
+### 주문취소
 ![image](https://user-images.githubusercontent.com/119825871/205930266-21787467-574b-4006-b435-e3ee32fedce0.png)
 
 ![image](https://user-images.githubusercontent.com/119825871/205930699-7a803c3f-e276-474a-9c12-447e115c4b33.png)
@@ -116,15 +116,15 @@
 ![image](https://user-images.githubusercontent.com/119825871/205931318-0eb2f8ea-93bf-4100-bada-f7f55cf043b0.png)
 
 
-### 4. Request / Response
-#### 구현
+## 4. Request / Response
+### 구현
 ![스크린샷_20221206_041555](https://user-images.githubusercontent.com/119825871/205846190-73cf48a6-9ca7-4bb1-b81c-978ef0bc9220.png)
-#### 실행
+### 실행
 ![스크린샷_20221206_041714](https://user-images.githubusercontent.com/119825871/205846241-d3854f8a-28b3-4f16-b940-bde07f11e93e.png)
 
-### 5. Circuit Breaker
+## 5. Circuit Breaker
 
-### 6. Gateway / Ingress
+## 6. Gateway / Ingress
 - 구현
 ![스크린샷_20221206_020802](https://user-images.githubusercontent.com/119825871/205822195-92d8cff9-d2d7-4ace-8ee7-04b65f047ae2.png)
 
