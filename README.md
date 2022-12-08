@@ -125,50 +125,56 @@ public class MyPageViewHandler {
             e.printStackTrace();
         }
     }
+```
+```
+gitpod /workspace/mall (main) $ http :8084/myPage
+HTTP/1.1 200 
+Connection: keep-alive
+Content-Type: application/hal+json
+Date: Tue, 06 Dec 2022 08:15:32 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
 
-
-    @StreamListener(KafkaProcessor.INPUT)
-    public void whenPaid_then_UPDATE_1(@Payload Paid paid) {
-        try {
-            if (!paid.validate()) return;
-                // view 객체 조회
-            Optional<MyPage> myPageOptional = myPageRepository.findById(Long.valueOf(paid.getOrderId()));
-
-            if( myPageOptional.isPresent()) {
-                 MyPage myPage = myPageOptional.get();
-            // view 객체에 이벤트의 eventDirectValue 를 set 함
-                myPage.setStatus("결재됨");    
-                // view 레파지 토리에 save
-                 myPageRepository.save(myPage);
-                }
-
-
-        }catch (Exception e){
-            e.printStackTrace();
+{
+    "_embedded": {
+        "myPage": [
+            {
+                "_links": {
+                    "myPage": {
+                        "href": "http://localhost:8084/myPage/5"
+                    },
+                    "self": {
+                        "href": "http://localhost:8084/myPage/5"
+                    }
+                },
+                "foodId": "밥",
+                "address": "서초구",
+                "customerId": "jhs",
+                "options": [],
+                "orderId": "뉴욕핫도그",
+                "status": "주문됨"
+            }
+        ]
+    },
+    "_links": {
+        "profile": {
+            "href": "http://localhost:8084/profile/myPage"
+        },
+        "self": {
+            "href": "http://localhost:8084/myPage"
         }
+    },
+    "page": {
+        "number": 0,
+        "size": 20,
+        "totalElements": 1,
+        "totalPages": 1
     }
-    @StreamListener(KafkaProcessor.INPUT)
-    public void whenOrderAccepted_then_UPDATE_2(@Payload OrderAccepted orderAccepted) {
-        try {
-            if (!orderAccepted.validate()) return;
-                // view 객체 조회
-
-                List<MyPage> myPageList = myPageRepository.findByStatus(orderAccepted.getOrderId());
-                for(MyPage myPage : myPageList){
-                    // view 객체에 이벤트의 eventDirectValue 를 set 함
-                    myPage.setStatus("접수됨");
-                // view 레파지 토리에 save
-                myPageRepository.save(myPage);
-                }
-
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-    }
-
 }
 ```
-
 ## 3. Compensation / Correlation
 ![image](https://user-images.githubusercontent.com/119825871/206202095-f3d19611-eb19-42e3-8634-55fbdb03a2d7.png)
 ```
