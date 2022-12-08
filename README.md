@@ -228,7 +228,28 @@ public interface FoodCookingService {
 ![스크린샷_20221206_041714](https://user-images.githubusercontent.com/119825871/205846241-d3854f8a-28b3-4f16-b940-bde07f11e93e.png)
 
 ## 5. Circuit Breaker
+오더정보 조회를 req/res 방식으로 호출하며, store에서 주문 미확인 특정 시간 이상 경과할 경우 서킷 브레이크 발생
+![스크린샷_20221208_083799](https://user-images.githubusercontent.com/119825871/206442786-57b46af0-857f-4a57-915c-9931abfc853a.png)
 
+- front서비스의 application.yml의 hystrix enable은 true로 timeout은 500ms로 설정
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution.isolation.thread.timeoutInMilliseconds: 500
+      
+- 오더 객체 로드 시 강제 delay 발생(랜덤으로 400ms에서 600ms 미만의 초)
+@PostLoad
+public void makeDelay(){
+    try {
+        Thread.currentThread().sleep((long) (400 + Math.random() * 200));
+
+    } catch (InterruptedException e) {
+        e.printStackTrace();
+    }
+}
 ## 6. Gateway / Ingress
 - 구현
 ![스크린샷_20221206_020802](https://user-images.githubusercontent.com/119825871/205822195-92d8cff9-d2d7-4ace-8ee7-04b65f047ae2.png)
