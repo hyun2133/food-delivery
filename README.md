@@ -155,7 +155,7 @@ Vary: Access-Control-Request-Headers
                 "address": "서초구",
                 "customerId": "jhs",
                 "options": [],
-                "orderId": "",
+                "orderId": "5",
                 "status": "주문됨"
             }
         ]
