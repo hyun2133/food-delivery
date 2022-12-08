@@ -126,6 +126,7 @@ public class MyPageViewHandler {
         }
     }
 ```
+### 구현
 ```
 gitpod /workspace/mall (main) $ http :8084/myPage
 HTTP/1.1 200 
@@ -154,7 +155,7 @@ Vary: Access-Control-Request-Headers
                 "address": "서초구",
                 "customerId": "jhs",
                 "options": [],
-                "orderId": "뉴욕핫도그",
+                "orderId": "",
                 "status": "주문됨"
             }
         ]
