@@ -126,7 +126,7 @@ public class MyPageViewHandler {
         }
     }
 ```
-### 구현
+### 실행
 ```
 gitpod /workspace/mall (main) $ http :8084/myPage
 HTTP/1.1 200 
