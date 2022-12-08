@@ -240,9 +240,10 @@ hystrix:
   command:
     default:
       execution.isolation.thread.timeoutInMilliseconds: 500
- ```     
+```     
+
 - 오더 객체 로드 시 강제 delay 발생(랜덤으로 400ms에서 600ms 미만의 초)
-- ```
+```
 @PostLoad
 public void makeOrderDelay(){
     try {
@@ -253,6 +254,7 @@ public void makeOrderDelay(){
     }
 }
 ```
+
 ## 6. Gateway / Ingress
 - 구현
 ![스크린샷_20221206_020802](https://user-images.githubusercontent.com/119825871/205822195-92d8cff9-d2d7-4ace-8ee7-04b65f047ae2.png)
